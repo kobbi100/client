@@ -1,0 +1,23 @@
+<h2>hello from prduit</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-7">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th >References </th> <th >Quantité</th> <th >Prix Unitaire</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let prduit of produits">
+          <td>{{prduit.ref}}</td>
+          <td>{{prduit.quantite}}</td>
+          <td>{{prduit.quantite}}</td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
