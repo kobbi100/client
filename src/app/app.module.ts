@@ -9,6 +9,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {AppRoutingModule} from './app.routing.module';
+import {ReactiveFormsModule} from '@angular/forms';
+import {ProduitService} from './produit/produit.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,8 +24,9 @@ import {AppRoutingModule} from './app.routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule],
-  providers: [ProduitMockService],
+    AppRoutingModule,
+    ReactiveFormsModule, HttpClientModule],
+  providers: [ProduitMockService, ProduitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
